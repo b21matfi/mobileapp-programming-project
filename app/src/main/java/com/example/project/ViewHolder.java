@@ -15,6 +15,7 @@ public class ViewHolder extends RecyclerView.ViewHolder {
     public TextView Name;
     public TextView Company;
     public TextView Category;
+    public TextView Cost;
 
 
     public ViewHolder(@NonNull View itemView) {
@@ -27,5 +28,6 @@ public class ViewHolder extends RecyclerView.ViewHolder {
         Name = itemView.findViewById(R.id.name_view);
         Company = itemView.findViewById(R.id.company_view);
         Category = itemView.findViewById(R.id.category_view);
+        Cost = itemView.findViewById(R.id.cost_view);
     }
 }
