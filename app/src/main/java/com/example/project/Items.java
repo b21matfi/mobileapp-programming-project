@@ -5,21 +5,21 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 public class Items extends AppCompatActivity {
-    public int Id;
+    public String Id;
     public String Login;
-    public int Size;
+    public String Size;
     public String Location;
     public String AuxData;
     public String Name;
     public String Company;
-    public int Cost;
+    public String Cost;
     public String Category;
 
-    public int getId() {
+    public String getId() {
         return Id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         Id = id;
     }
 
@@ -31,11 +31,11 @@ public class Items extends AppCompatActivity {
         Login = login;
     }
 
-    public int getSize() {
+    public String getSize() {
         return Size;
     }
 
-    public void setSize(int size) {
+    public void setSize(String size) {
         Size = size;
     }
 
@@ -71,11 +71,11 @@ public class Items extends AppCompatActivity {
         Company = company;
     }
 
-    public int getCost() {
+    public String getCost() {
         return Cost;
     }
 
-    public void setCost(int cost) {
+    public void setCost(String cost) {
         Cost = cost;
     }
 
