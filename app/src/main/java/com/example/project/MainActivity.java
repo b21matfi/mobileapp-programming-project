@@ -20,7 +20,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements JsonTask.JsonTaskListener {
     public JsonTask jsontask;
-    private final String JSON_URL = "https://mobprog.webug.se/json-api?login=brom";
+    private final String JSON_URL = "https://mobprog.webug.se/json-api?login=b21matfi";
     private RecyclerView recyclerView;
     private List<Items> itemslist;
     private MyAdapter myAdapter;
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity implements JsonTask.JsonTask
         recyclerView.setAdapter(myAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        new JsonTask(this).execute("https://mobprog.webug.se/json-api?login=b21matfi");
+        new JsonTask(this).execute(JSON_URL);
     }
 
     @Override
