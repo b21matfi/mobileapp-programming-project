@@ -1,7 +1,10 @@
 package com.example.project;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 
 
 import com.google.gson.Gson;
@@ -24,6 +27,7 @@ public class MainActivity extends AppCompatActivity implements JsonTask.JsonTask
     private RecyclerView recyclerView;
     private List<Items> itemslist;
     private MyAdapter myAdapter;
+    private Button about;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,7 +37,14 @@ public class MainActivity extends AppCompatActivity implements JsonTask.JsonTask
 
         itemslist = new ArrayList<>();
         myAdapter = new MyAdapter(itemslist);
-
+        about = findViewById(R.id.myButton);
+        about.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, About.class);
+                startActivity(intent);
+            }
+        });
 
 
         recyclerView = findViewById(R.id.recycler_view);
@@ -48,7 +59,7 @@ public class MainActivity extends AppCompatActivity implements JsonTask.JsonTask
         Log.d("TEST", "onPostExecute: " + json);
         Gson gson = new Gson();
         Type type = new TypeToken<List<Items>>(){}.getType();
-        List<Items> tmpList = gson.fromJson(json, type);
+        ArrayList<Items> tmpList = gson.fromJson(json, type);
         Log.d("TEST", "onPostExecute: " + tmpList.toString());
         itemslist.addAll(tmpList);
         myAdapter.notifyDataSetChanged();
