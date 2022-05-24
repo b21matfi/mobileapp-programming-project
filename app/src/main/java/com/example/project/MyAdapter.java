@@ -21,10 +21,10 @@ public class MyAdapter extends RecyclerView.Adapter<ViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.Id.setText(itemsList.get(position).getID());
-        holder.Name.setText(itemsList.get(position).getName());
-        holder.Company.setText(itemsList.get(position).getCompany());
-        holder.Category.setText(itemsList.get(position).getCategory());
+        holder.id.setText(itemsList.get(position).getID());
+        holder.name.setText(itemsList.get(position).getName());
+        holder.com.setText(itemsList.get(position).getCompany());
+        holder.category.setText(itemsList.get(position).getCategory());
     }
 
     @Override

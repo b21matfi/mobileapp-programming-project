@@ -6,31 +6,47 @@
     android:layout_height="match_parent"
     tools:context=".About">
 
+    <Button
+        android:id="@+id/homeButton"
+        android:layout_width="83dp"
+        android:layout_height="43dp"
+        android:text="Home"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
     <TextView
         android:id="@+id/titel_view"
         android:layout_width="200dp"
         android:layout_height="24dp"
-        android:layout_marginBottom="508dp"
+        android:layout_marginBottom="496dp"
         android:text="MålGrupp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.208"
-        app:layout_constraintStart_toStartOf="parent"
-        android:textstyle="bold"
-        />
+        app:layout_constraintHorizontal_bias="0.26"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/info_view"
         android:layout_width="301dp"
         android:layout_height="200dp"
-        android:layout_marginStart="44dp"
-        android:text="Denna app är gjord för föräldrar som är trötta på sina barn, Man kan använda appen
-        för att kolla vilen kanal/program man kan sätta på för att barnen ska låta en vara ifred. Appen erbjuder
-        olika kanaler och program som är valde bland flera tusentals barn och föräldarar. Det är vetenskapligt bevisat att barnen sitter helt tysta medans de kollar på tv:n.
-        När man sätter på tv:n så kan man sätta sig tillbaka och knäppa en bärs njut av tystnaden."
-
+        android:layout_marginTop="4dp"
+        android:text="Denna app är gjord för föräldrar som är trötta på sina barn, Man kan använda appen för att kolla vilen kanal/program man kan sätta på för att barnen ska låta en vara ifred. Appen erbjuder olika kanaler och program som är valde bland flera tusentals barn och föräldarar. Det är vetenskapligt bevisat att barnen sitter helt tysta medans de kollar på tv:n. När man sätter på tv:n så kan man sätta sig tillbaka och knäppa en bärs njut av tystnaden."
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="230dp"
+        app:layout_constraintTop_toBottomOf="@id/titel_view"
         tools:ignore="MissingConstraints" />
 
 

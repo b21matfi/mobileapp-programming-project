@@ -7,19 +7,19 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 public class ViewHolder extends RecyclerView.ViewHolder {
-    public TextView Id;
-    public TextView Name;
-    public TextView Company;
-    public TextView Category;
+    public TextView id;
+    public TextView name;
+    public TextView com;
+    public TextView category;
 
 
 
     public ViewHolder(@NonNull View itemView) {
         super(itemView);
-        Id = itemView.findViewById(R.id.id_view);
-        Name = itemView.findViewById(R.id.name_view);
-        Company = itemView.findViewById(R.id.company_view);
-        Category = itemView.findViewById(R.id.category_view);
+        id = itemView.findViewById(R.id.id_view);
+        name = itemView.findViewById(R.id.name_view);
+        com = itemView.findViewById(R.id.company_view);
+        category = itemView.findViewById(R.id.category_view);
 
     }
 }

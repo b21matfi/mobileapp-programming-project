@@ -12,6 +12,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ID:"
+        app:layout_goneMarginBottom="2dp"
+        app:layout_goneMarginTop="2dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         tools:ignore="MissingConstraints" />
@@ -21,6 +23,8 @@
         android:layout_height="2dp"
         android:background="@color/red"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_goneMarginBottom="3dp"
+        app:layout_goneMarginTop="3dp"
         />
     <TextView
         android:id="@+id/name_view"
@@ -28,6 +32,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="Name:"
+        app:layout_goneMarginBottom="2dp"
+        app:layout_goneMarginTop="2dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/id_view" />
@@ -38,6 +44,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="Company:"
+        app:layout_goneMarginBottom="2dp"
+        app:layout_goneMarginTop="2dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/name_view" />
@@ -49,6 +57,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="Category:"
+        app:layout_goneMarginBottom="2dp"
+        app:layout_goneMarginTop="2dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/company_view"
