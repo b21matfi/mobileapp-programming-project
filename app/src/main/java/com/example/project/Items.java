@@ -7,12 +7,12 @@ import android.os.Bundle;
 public class Items extends AppCompatActivity {
     public String Id;
     public String Login;
-    public String Size;
+    public int Size;
     public String Location;
     public String AuxData;
     public String Name;
     public String Company;
-    public String Cost;
+    public int Cost;
     public String Category;
 
     public String getId() {
@@ -31,11 +31,11 @@ public class Items extends AppCompatActivity {
         Login = login;
     }
 
-    public String getSize() {
+    public int getSize() {
         return Size;
     }
 
-    public void setSize(String size) {
+    public void setSize(int size) {
         Size = size;
     }
 
@@ -71,11 +71,11 @@ public class Items extends AppCompatActivity {
         Company = company;
     }
 
-    public String getCost() {
+    public int getCost() {
         return Cost;
     }
 
-    public void setCost(String cost) {
+    public void setCost(int cost) {
         Cost = cost;
     }
 
