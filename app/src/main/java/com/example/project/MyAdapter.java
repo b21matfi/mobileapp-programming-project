@@ -1,5 +1,6 @@
 package com.example.project;
 
+import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
@@ -15,22 +16,15 @@ public class MyAdapter extends RecyclerView.Adapter<ViewHolder> {
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return null;
+        return new ViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_items, parent, false));
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.Id.setText(itemsList.get(position).getName());
-        holder.Login.setText(itemsList.get(position).getName());
-        holder.Location.setText(itemsList.get(position).getName());
-        holder.Size.setText(Integer.valueOf(itemsList.get(position).getSize()));
-        holder.AuxData.setText(itemsList.get(position).getName());
+        holder.Id.setText(itemsList.get(position).getID());
         holder.Name.setText(itemsList.get(position).getName());
-        holder.Company.setText(itemsList.get(position).getName());
-        holder.Cost.setText(Integer.valueOf(itemsList.get(position).getSize()));
-
-        holder.Category.setText(itemsList.get(position).getName());
-
+        holder.Company.setText(itemsList.get(position).getCompany());
+        holder.Category.setText(itemsList.get(position).getCategory());
     }
 
     @Override

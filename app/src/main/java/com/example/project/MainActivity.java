@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity implements JsonTask.JsonTask
         Type type = new TypeToken<List<Items>>(){}.getType();
         ArrayList<Items> tmpList = gson.fromJson(json, type);
         Log.d("TEST", "onPostExecute: " + tmpList.toString());
-        itemslist.addAll(tmpList);
+        myAdapter.setitemslist(tmpList);
         myAdapter.notifyDataSetChanged();
 
 

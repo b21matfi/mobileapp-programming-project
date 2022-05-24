@@ -6,4 +6,32 @@
     android:layout_height="match_parent"
     tools:context=".About">
 
+    <TextView
+        android:id="@+id/titel_view"
+        android:layout_width="200dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="508dp"
+        android:text="MålGrupp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.208"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textstyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/info_view"
+        android:layout_width="301dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="44dp"
+        android:text="Denna app är gjord för föräldrar som är trötta på sina barn, Man kan använda appen
+        för att kolla vilen kanal/program man kan sätta på för att barnen ska låta en vara ifred. Appen erbjuder
+        olika kanaler och program som är valde bland flera tusentals barn och föräldarar. Det är vetenskapligt bevisat att barnen sitter helt tysta medans de kollar på tv:n.
+        När man sätter på tv:n så kan man sätta sig tillbaka och knäppa en bärs njut av tystnaden."
+
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="230dp"
+        tools:ignore="MissingConstraints" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

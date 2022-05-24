@@ -1,89 +1,42 @@
 package com.example.project;
 
-import androidx.appcompat.app.AppCompatActivity;
+public class Items {
+    public String ID;
+    public String name;
+    public String company;
+    public String category;
 
-import android.os.Bundle;
-
-public class Items extends AppCompatActivity {
-    public String Id;
-    public String Login;
-    public int Size;
-    public String Location;
-    public String AuxData;
-    public String Name;
-    public String Company;
-    public int Cost;
-    public String Category;
-
-    public String getId() {
-        return Id;
+    public String getID() {
+        return ID;
     }
 
-    public void setId(String id) {
-        Id = id;
+    public void setID(String ID) {
+        this.ID = ID;
     }
 
-    public String getLogin() {
-        return Login;
-    }
-
-    public void setLogin(String login) {
-        Login = login;
-    }
-
-    public int getSize() {
-        return Size;
-    }
-
-    public void setSize(int size) {
-        Size = size;
-    }
-
-    public String getLocation() {
-        return Location;
-    }
-
-    public void setLocation(String location) {
-        Location = location;
-    }
-
-    public String getAuxData() {
-        return AuxData;
-    }
-
-    public void setAuxData(String auxData) {
-        AuxData = auxData;
-    }
 
     public String getName() {
-        return Name;
+        return name;
     }
 
     public void setName(String name) {
-        Name = name;
+        this.name = name;
     }
 
     public String getCompany() {
-        return Company;
+        return company;
     }
 
     public void setCompany(String company) {
-        Company = company;
+        this.company = company;
     }
 
-    public int getCost() {
-        return Cost;
-    }
-
-    public void setCost(int cost) {
-        Cost = cost;
-    }
 
     public String getCategory() {
-        return Category;
+        return category;
     }
 
     public void setCategory(String category) {
-        Category = category;
+        this.category = category;
     }
 }
